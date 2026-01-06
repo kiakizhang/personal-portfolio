@@ -4,7 +4,7 @@ export const profileData = {
   // 基础信息
   name: "张琪（kiakizhang）",
   title: "产品经理 / AI 探索者",
-  bio: "真诚、生命、探索",
+  bio: "真诚、生命力、探索",
   
   // 个人标签
   tags: [
