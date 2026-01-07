@@ -21,7 +21,7 @@ export default function Hero() {
             <div className="relative">
               <div className="w-40 h-40 md:w-48 md:h-48 rounded-2xl bg-gradient-to-br from-blue-400 to-purple-500 p-1">
                 <div className="w-full h-full rounded-2xl bg-gray-800 flex items-center justify-center overflow-hidden">
-                 <img src="/touxiang.jpg" alt="张琪" className="w-full h-full object-cover" />
+                 <img src="/personal-portfolio/touxiang.jpg" alt="张琪" className="w-full h-full object-cover" />
                 </div>
               </div>
               {/* Decorative elements */}
