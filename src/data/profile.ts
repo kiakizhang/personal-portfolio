@@ -8,36 +8,42 @@ export const profileData = {
   
   // 个人标签
   tags: [
-    { label: "产品经理", color: "blue" },
-    { label: "AI 爱好者", color: "purple" },
+    { label: “AI产品经理", color: "blue" },
+    { label: “idea实践者” color: "purple" },
     { label: "终身学习者", color: "green" },
-    { label: "创意思考", color: "orange" },
-    { label: "用户体验", color: "pink" },
+    { label: “纯文科生vibe-coding”, color: "orange" },
+    { label: “自媒体博主”, color: "pink" },
+    { label: “个人工作室负责人”, color: “yellow” },
   ],
   
   // 核心优势
   strengths: [
     {
-      icon: "💡",
-      title: "产品思维",
-      description: "深入理解用户需求，将复杂问题转化为简洁的产品方案",
+      title: “C端产品应用解决方案”,
+      description: "理解用户需求，提供符合预算并解决商业/业务痛点的解决方案",
+    },
+{
+      title: “B端HR领域产品策划”,
+      description: “半年鹅厂HR人事系统、SSC智能问询（AI）工作经历”,
     },
     {
-      icon: "🤖",
-      title: "AI 应用",
-      description: "熟悉 AI 产品设计，善于将 AI 能力融入产品体验",
+      title: "AI workflow&Agent”,
+      description: 过往经验：RAG、multi-agent、memory、COT、badecase沉淀及反哺训练、异常处理机制、兜底机制、评价标准等，推动产品持续迭代优化”
     },
+  {
+      title: “商业模式研究”,
+      description: “点石创校优秀营员、和君校友，有产业、金融、资本思维基础，具备良好的商业思维与洞察力、行动力”,
+    }, 
     {
-      icon: "📊",
-      title: "数据驱动",
-      description: "擅长通过数据分析发现问题，用数据验证产品决策",
+      title: “AI社交与陪伴”,
+      description: “社交’钩子’，多轮对话、上下文记忆、prompt等”,
     },
-    {
-      icon: "🎨",
-      title: "设计感知",
-      description: "注重产品美学与交互体验，追求极致的用户体验",
+   {
+      title: “多边探索与实践”,
+      description: “团队游戏创作中、电商agent制作中，欢迎交流”,
     },
   ],
+  
   
   // 职业历程
   career: [
