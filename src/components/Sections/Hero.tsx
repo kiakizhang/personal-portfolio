@@ -17,18 +17,20 @@ export default function Hero() {
       <Container>
         <div className="grid md:grid-cols-2 gap-12 items-center py-12">
           {/* Left: Avatar */}
+                    {/* Left: Avatar */}
           <div className="flex justify-center md:justify-end order-1 md:order-2">
             <div className="relative">
-              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-blue-400 to-purple-500 p-1">
-                <div className="w-full h-full rounded-full bg-gray-800 flex items-center justify-center overflow-hidden">
-                  <span className="text-6xl">👤</span>
+              <div className="w-40 h-40 md:w-48 md:h-48 rounded-2xl bg-gradient-to-br from-blue-400 to-purple-500 p-1">
+                <div className="w-full h-full rounded-2xl bg-gray-800 flex items-center justify-center overflow-hidden">
+                  <span className="text-5xl">👤</span>
                 </div>
               </div>
               {/* Decorative elements */}
-              <div className="absolute -top-4 -right-4 w-20 h-20 bg-purple-500 rounded-full opacity-30 blur-xl"></div>
-              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-blue-500 rounded-full opacity-30 blur-xl"></div>
+              <div className="absolute -top-3 -right-3 w-14 h-14 bg-purple-500 rounded-xl opacity-30 blur-xl"></div>
+              <div className="absolute -bottom-3 -left-3 w-12 h-12 bg-blue-500 rounded-xl opacity-30 blur-xl"></div>
             </div>
           </div>
+
 
           {/* Right: Content */}
           <div className="text-center md:text-left order-2 md:order-1">
