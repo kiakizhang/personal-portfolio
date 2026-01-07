@@ -2,7 +2,7 @@ import { profileData } from '../../data/profile';
 import Container from '../Layout/Container';
 
 export default function Hero() {
-  const { name, title, bio, tags } = profileData;
+  const { name, title, tags } = profileData;
 
   const tagColors: Record<string, string> = {
     blue: 'bg-blue-500/20 text-blue-300 hover:bg-blue-500/30',
@@ -17,7 +17,6 @@ export default function Hero() {
       <Container>
         <div className="grid md:grid-cols-2 gap-12 items-center py-12">
           {/* Left: Avatar */}
-                    {/* Left: Avatar */}
           <div className="flex justify-center md:justify-end order-1 md:order-2">
             <div className="relative">
               <div className="w-40 h-40 md:w-48 md:h-48 rounded-2xl bg-gradient-to-br from-blue-400 to-purple-500 p-1">
@@ -31,15 +30,13 @@ export default function Hero() {
             </div>
           </div>
 
-
           {/* Right: Content */}
           <div className="text-center md:text-left order-2 md:order-1">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
               Hi, 我是{' '}
               <span className="gradient-text">{name}</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-6">{title}</p>
-            <p className="text-gray-400 text-lg mb-8 max-w-lg">{bio}</p>
+            <p className="text-xl md:text-2xl text-gray-300 mb-8">{title}</p>
 
             {/* Tags */}
             <div className="flex flex-wrap gap-3 justify-center md:justify-start">
@@ -52,25 +49,10 @@ export default function Hero() {
                 </span>
               ))}
             </div>
-
-            {/* CTA Buttons */}
-            <div className="flex gap-4 mt-8 justify-center md:justify-start">
-              <a
-                href="#contact"
-                className="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-medium hover:shadow-lg hover:scale-105 transition-all duration-300"
-              >
-                联系我
-              </a>
-              <a
-                href="#career"
-                className="px-6 py-3 border-2 border-gray-600 text-gray-300 rounded-full font-medium hover:border-gray-500 hover:bg-gray-800 transition-all duration-300"
-              >
-                了解更多
-              </a>
-            </div>
           </div>
         </div>
       </Container>
     </section>
   );
 }
+
