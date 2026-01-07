@@ -20,9 +20,6 @@ export default function Strengths() {
               key={index}
               className="card group hover:scale-105 hover:-translate-y-1"
             >
-              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                {strength.icon}
-              </div>
               <h3 className="text-xl font-semibold text-white mb-2">
                 {strength.title}
               </h3>
