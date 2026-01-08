@@ -8,6 +8,8 @@ export default function Activities() {
     主办: 'bg-blue-500/20 text-blue-300',
     演讲: 'bg-purple-500/20 text-purple-300',
     参与: 'bg-green-500/20 text-green-300',
+    "组织并演讲": 'bg-purple-500/20 text-purple-300',
+    "领奖并演讲": 'bg-orange-500/20 text-orange-300',
   };
 
   return (
@@ -26,9 +28,13 @@ export default function Activities() {
               key={index}
               className="card overflow-hidden group hover:scale-105 hover:-translate-y-1"
             >
-              {/* Image placeholder */}
-              <div className="h-40 bg-gradient-to-br from-blue-900/50 to-purple-900/50 -mx-6 -mt-6 mb-4 flex items-center justify-center">
-                <span className="text-6xl opacity-50">📸</span>
+              {/* Image */}
+              <div className="h-40 -mx-6 -mt-6 mb-4 overflow-hidden">
+                <img 
+                  src={activity.image} 
+                  alt={activity.title} 
+                  className="w-full h-full object-cover"
+                />
               </div>
               
               <div className="flex items-center gap-2 mb-2">
