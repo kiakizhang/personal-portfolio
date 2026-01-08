@@ -91,44 +91,45 @@ export const profileData = {
     },
   ],
   
-  // 2025活动经历
-  activities: [
-    {
-      title: "AI creators",
-      type: "参与",
-      date: "2025.11",
-      description: "参与AI产品工作坊，一下午将idea0-1落地",
-      image: "/personal-portfolio/AI creators.jpg",
-    },
-    {
-      title: "wteam AI创客节",
-      type: "参与",
-      date: "2025.8",
-      description: "了解并体验更多有趣的AI产品，学习AI原生pm思维",
-      image: "/personal-portfolio/创客节.jpg",
-    },
-    {
-      title: "看到100个优秀的世界",
-      type: "组织并演讲",
-      date: "2025.4",
-      description: "在社群组织创业及就业分享讨论，吸引100+人",
-      image: "/personal-portfolio/演讲.jpg",
-    },
-        {
-      title: "荣耀GT销售精英奖",
-      type: "领奖并演讲",
-      date: "2025.3",
-      description: "创意人气奖+招聘直通卡",
-      image: "/personal-portfolio/荣耀.jpg",
-    },
-        {
-      title: "LET‘S VISION",
-      type: "参与",
-      date: "2025.3",
-      description: "了解苹果VRXR生态下，有趣的idea和产品",
-      image: "/personal-portfolio/visionpro.jpg",
-    },
-  ],
+  /// 活动经历
+activities: [
+  {
+    title: "AI creators",
+    type: "参与",
+    date: "2025.11",
+    description: "参与AI产品工作坊，一下午将idea0-1落地",
+    image: "/personal-portfolio/AI%20creators.jpg",  // 空格用 %20
+  },
+  {
+    title: "wteam AI创客节",
+    type: "参与",
+    date: "2025.8",
+    description: "了解并体验更多有趣的AI产品，学习AI原生pm思维",
+    image: "/personal-portfolio/创客节.jpg",
+  },
+  {
+    title: "看到100个优秀的世界",
+    type: "组织并演讲",
+    date: "2025.4",
+    description: "在社群组织创业及就业分享讨论，吸引100+人",
+    image: "/personal-portfolio/演讲.jpg",
+  },
+  {
+    title: "荣耀GT销售精英奖",
+    type: "领奖并演讲",
+    date: "2025.3",
+    description: "创意人气奖+招聘直通卡",
+    image: "/personal-portfolio/荣耀.jpg",
+  },
+  {
+    title: "LET'S VISION",
+    type: "参与",
+    date: "2025.3",
+    description: "了解苹果VRXR生态下，有趣的idea和产品",
+    image: "/personal-portfolio/visionpro.jpg",
+  },
+],
+
   
   // AI 思考
   aiThoughts: [
@@ -146,37 +147,36 @@ export const profileData = {
     },
   ],
   
-  // 社交媒体
-  socialMedia: [
-    {
-      platform: "微信",
-      icon: "wechat",
-      qrCode: "/personal-portfolio/weixin.jpg",
-      description: "欢迎微信交流",
-    },
-    {
-      platform: "公众号",
-      icon: "wechat-official",
-      qrCode: "/personal-portfolio/公众号.jpg",
-      description: "记录日常活动及思考",
-    },
-    {
-      platform: "播客",
-      icon: "podcast",
-      qrCode: "/personal-portfolio/boke.jpg",
-      description: "收听我的播客节目",
-    },
-    {
-      platform: "B站",
-      icon: "bilibili",
-      qrCode: "/personal-portfolio/bilibili.jpg",
-      description: "欢迎 B 站账号",
-    },
-    {
-      platform: "CSDN",
-      icon: "csdn",
-      qrCode: "/personal-portfolio/CSDN.jpg",
-      description: "访问 CSDN 博客",
-    },
-  ],
-};
+// 社交媒体
+socialMedia: [
+  {
+    platform: "微信",
+    icon: "wechat",
+    qrCode: "/personal-portfolio/weixin.jpg",
+    description: "欢迎微信交流",
+  },
+  {
+    platform: "公众号",
+    icon: "wechat-official",
+    qrCode: "/personal-portfolio/公众号.jpg",
+    description: "记录日常活动及思考",
+  },
+  {
+    platform: "播客",
+    icon: "podcast",
+    qrCode: "/personal-portfolio/boke.jpg",
+    description: "收听我的播客节目",
+  },
+  {
+    platform: "B站",
+    icon: "bilibili",
+    qrCode: "/personal-portfolio/bilibili.jpg",
+    description: "欢迎 B 站账号",
+  },
+  {
+    platform: "CSDN",
+    icon: "csdn",
+    qrCode: "/personal-portfolio/CSDN.jpg",
+    description: "访问 CSDN 博客",
+  },
+],
