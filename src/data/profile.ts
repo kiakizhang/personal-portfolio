@@ -60,66 +60,73 @@ export const profileData = {
       period: "2024.4-2024.6",
       description: "推动社交陪伴类产品上线，通过模型微调做真人语音房陪聊，涉及情感陪伴、社交对话等方面",
       logo: "/company-placeholder.png",
-    },
-    {
-      company: "武汉第拾科技",
-      role: "产品助理",
-      period: "2024.5-2024.7",
-      description: "0-1搭建宣传网站，项目管理",
-      logo: "/company-placeholder.png",
-    },
+    }
   ],
   
   // 荣誉成就
   achievements: [
     {
-      title: "优秀产品奖",
-      year: "2024",
-      description: "获得公司年度最佳产品创新奖",
-      icon: "🏆",
-    },
-    {
-      title: "专利发明",
-      year: "2023",
-      description: "AI 交互领域相关专利 2 项",
+      title: "三创跨境电商国赛一等奖",
+      year: "2025",
+      description: "数据分析、跨境电商、营销",
       icon: "📜",
     },
     {
-      title: "行业演讲",
-      year: "2023",
-      description: "受邀在行业大会分享 AI 产品经验",
+      title: "Datawhale优秀营员",
+      year: "2024",
+      description: "为AI开源社区作出持续贡献",
       icon: "🎤",
+    },   
+    {
+      title: "和君校友",
+      year: "2024",
+      description: "产业、战略、金融、资本知识基础",
+      icon: "🎓",
     },
     {
-      title: "认证资质",
-      year: "2022",
-      description: "获得产品管理专业认证",
-      icon: "🎓",
+      title: "点石CEO训练营优秀营员",
+      year: "2023",
+      description: "更棒的批判性思维与商业化思考",
+      icon: "🏆",
     },
   ],
   
-  // 活动经历
+  // 2025活动经历
   activities: [
     {
-      title: "AI 产品设计工作坊",
-      type: "主办",
-      date: "2024.06",
-      description: "组织并主持了 50+ 人参与的 AI 产品设计工作坊",
-      image: "/activity-placeholder.jpg",
-    },
-    {
-      title: "产品经理社区分享",
-      type: "演讲",
-      date: "2024.03",
-      description: "分享 AI 时代的产品思维转变",
-      image: "/activity-placeholder.jpg",
-    },
-    {
-      title: "开源项目贡献",
+      title: "AI creators",
       type: "参与",
-      date: "2023.12",
-      description: "参与多个开源 AI 工具的产品设计",
-      image: "/activity-placeholder.jpg",
+      date: "2025.11",
+      description: "参与AI产品工作坊，一下午将idea0-1落地",
+      image: "/personal-portfolio/AI creators.jpg",
+    },
+    {
+      title: "wteam AI创客节",
+      type: "参与",
+      date: "2025.8",
+      description: "了解并体验更多有趣的AI产品，学习AI原生pm思维",
+      image: "/personal-portfolio/创客节.jpg",
+    },
+    {
+      title: "看到100个优秀的世界",
+      type: "组织并演讲",
+      date: "2025.4",
+      description: "在社群组织创业及就业分享讨论，吸引100+人",
+      image: "/personal-portfolio/演讲.jpg",
+    },
+        {
+      title: "荣耀GT销售精英奖",
+      type: "领奖并演讲",
+      date: "2025.3",
+      description: "创意人气奖+招聘直通卡",
+      image: "/personal-portfolio/荣耀.jpg",
+    },
+        {
+      title: "LET‘S VISION",
+      type: "参与",
+      date: "2025.3",
+      description: "了解苹果VRXR生态下，有趣的idea和产品",
+      image: "/personal-portfolio/visionpro.jpg",
     },
   ],
   
@@ -134,8 +141,8 @@ export const profileData = {
       content: "AI 时代的产品设计不再是简单的功能堆砌，而是如何让 AI 能力自然地融入用户的使用场景，创造无感知但有价值的体验。",
     },
     {
-      title: "数据隐私与 AI 伦理的平衡",
-      content: "在追求产品智能化的同时，我们需要时刻思考用户数据的边界，建立透明、可信的 AI 产品体系。",
+      title: "AI Agent价值在TOB，TOC要建立垂直领域数据护城河",
+      content: "持续构建护城河-做自己的模型-吸收更多用户数据-优化模型-给用户带来更强的体验",
     },
   ],
   
