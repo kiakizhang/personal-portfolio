@@ -10,7 +10,7 @@ export default function Strengths() {
         <div className="text-center mb-12">
           <h2 className="section-title">核心优势</h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            多年产品经验沉淀，形成独特的产品方法论
+            AI native创造力+丰富的实战经验
           </p>
         </div>
 
