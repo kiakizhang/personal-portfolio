@@ -28,15 +28,15 @@ export default function Contact() {
               key={index}
               className="card text-center group hover:scale-105 hover:-translate-y-1 cursor-pointer"
             >
-              {/* QR Code placeholder */}
-              <div className="w-32 h-32 mx-auto mb-4 bg-gray-700 rounded-xl flex items-center justify-center group-hover:bg-gray-600 transition-colors">
-                <div className="text-center">
-                  <span className="text-4xl block mb-2">
-                    {platformIcons[social.platform] || '📱'}
-                  </span>
-                  <span className="text-xs text-gray-500">二维码占位</span>
-                </div>
-              </div>
+             {/* QR Code */}
+<div className="w-32 h-32 mx-auto mb-4 bg-gray-700 rounded-xl overflow-hidden">
+  <img 
+    src={social.qrCode} 
+    alt={social.platform} 
+    className="w-full h-full object-cover"
+  />
+</div>
+
               
               <h3 className="font-semibold text-white mb-1">
                 {social.platform}
@@ -52,7 +52,7 @@ export default function Contact() {
         <div className="mt-12 text-center">
           <p className="text-gray-400 mb-4">或者发送邮件至</p>
           <a
-            href="mailto:your-email@example.com"
+            href="mailto:2947983142@qq.com"
             className="inline-block px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-medium hover:shadow-lg hover:scale-105 transition-all duration-300"
           >
             your-email@example.com
