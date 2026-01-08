@@ -4,14 +4,6 @@ import Container from '../Layout/Container';
 export default function Contact() {
   const { socialMedia } = profileData;
 
-  const platformIcons: Record<string, string> = {
-    微信: '💬',
-    公众号: '📱',
-    播客: '🎙️',
-    B站: '📺',
-    CSDN: '💻',
-  };
-
   return (
     <section id="contact" className="py-20 bg-gray-800">
       <Container>
@@ -28,15 +20,14 @@ export default function Contact() {
               key={index}
               className="card text-center group hover:scale-105 hover:-translate-y-1 cursor-pointer"
             >
-             {/* QR Code */}
-<div className="w-32 h-32 mx-auto mb-4 bg-gray-700 rounded-xl overflow-hidden">
-  <img 
-    src={social.qrCode} 
-    alt={social.platform} 
-    className="w-full h-full object-cover"
-  />
-</div>
-
+              {/* QR Code */}
+              <div className="w-32 h-32 mx-auto mb-4 bg-gray-700 rounded-xl overflow-hidden">
+                <img 
+                  src={social.qrCode} 
+                  alt={social.platform} 
+                  className="w-full h-full object-cover"
+                />
+              </div>
               
               <h3 className="font-semibold text-white mb-1">
                 {social.platform}
@@ -55,10 +46,11 @@ export default function Contact() {
             href="mailto:2947983142@qq.com"
             className="inline-block px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-medium hover:shadow-lg hover:scale-105 transition-all duration-300"
           >
-            your-email@example.com
+            2947983142@qq.com
           </a>
         </div>
       </Container>
     </section>
   );
 }
+
