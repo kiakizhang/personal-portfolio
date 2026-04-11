@@ -48,6 +48,13 @@ export const profileData = {
   // 职业历程
   career: [
     {
+      company: "梦马智能（Dokichat）",
+      role: "AI产品策划",
+      period: "2026.3-至今",
+      description: "海外市场AI情感陪伴产品。负责多模型（Claude、gemini等）API对接、提示词优化与测试；搭建内部舆情监控系统；优化产品内部搜推策略。",
+      logo: "/company-placeholder.png",
+    },
+    {
       company: "腾讯",
       role: "产品策划",
       period: "2025.7- 2026.1",
@@ -92,7 +99,14 @@ export const profileData = {
   ],
   
   /// 活动经历
-activities: [
+  activities: [
+  {
+    title: "DataWell 黑客松必备记直播",
+    type: "参与并直播",
+    date: "2026.4",
+    description: "参与 DataWell 黑客松经验分享直播",
+    image: "/company-placeholder.png",
+  },
   {
     title: "AI creators",
     type: "参与",
