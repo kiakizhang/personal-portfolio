@@ -33,6 +33,7 @@ export default function Activities() {
                 <img 
                   src={activity.image} 
                   alt={activity.title} 
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
               </div>

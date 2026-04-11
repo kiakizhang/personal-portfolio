@@ -25,6 +25,7 @@ export default function Contact() {
                 <img 
                   src={social.qrCode} 
                   alt={social.platform} 
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
               </div>

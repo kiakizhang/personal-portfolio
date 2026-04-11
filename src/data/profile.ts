@@ -101,11 +101,11 @@ export const profileData = {
   /// 活动经历
   activities: [
   {
-    title: "DataWell 黑客松必备记直播",
+    title: "Datawhale 黑客松必备记直播",
     type: "参与并直播",
     date: "2026.4",
-    description: "参与 DataWell 黑客松经验分享直播",
-    image: "/company-placeholder.png",
+    description: "参与 Datawhale 黑客松经验分享直播",
+    image: "/personal-portfolio/datawhale.jpg",
   },
   {
     title: "AI creators",

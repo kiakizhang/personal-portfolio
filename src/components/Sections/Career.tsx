@@ -28,7 +28,7 @@ export default function Career() {
               >
                 {/* Content */}
                 <div className={`flex-1 ${index % 2 === 0 ? 'md:text-right' : 'md:text-left'}`}>
-                  <div className="card inline-block max-w-md">
+                  <div className="card inline-block max-w-md text-left">
                     <div className="flex items-center gap-4 mb-3">
                       <div className="w-12 h-12 rounded-xl bg-gray-700 flex items-center justify-center text-2xl">
                         🏢
