@@ -1,21 +1,36 @@
 import { profileData } from '../../data/profile';
 import type { CareerItem } from '../../data/profile';
 import Container from '../Layout/Container';
+import { CareerShootingStars } from '../Effects';
+import { useEffect, useState } from 'react';
 
 export default function Career() {
   const { career } = profileData as { career: CareerItem[] };
+  const [enableMeteors, setEnableMeteors] = useState(false);
+
+  useEffect(() => {
+    // 桌面端 + 不减少动效：才启用流星（移动端关闭）
+    const reduceMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches ?? false;
+    const coarsePointer = window.matchMedia?.('(pointer: coarse)')?.matches ?? false;
+    setEnableMeteors(!reduceMotion && !coarsePointer);
+  }, []);
 
   return (
-    <section id="career" className="py-20 bg-gray-900">
+    <section id="career" className="py-20 bg-gray-900 career-starry-bg relative overflow-hidden">
+      {/* 星空+流星：仅作用于职业历程板块；canvas 不拦截鼠标事件 */}
+      <CareerShootingStars
+        enabled={enableMeteors}
+        className="absolute inset-0 pointer-events-none z-0"
+      />
       <Container>
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 relative z-10">
           <h2 className="section-title">职业历程</h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
             一路成长，不断探索产品的更多可能
           </p>
         </div>
 
-        <div className="relative">
+        <div className="relative z-10">
           {/* Timeline line */}
           <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gradient-to-b from-blue-500 to-purple-500 hidden md:block"></div>
 
