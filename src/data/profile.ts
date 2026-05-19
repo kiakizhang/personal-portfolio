@@ -93,14 +93,31 @@ export const profileData = {
       company: "腾讯",
       role: "产品策划",
       period: "2025.7- 2026.1",
-      description: "提升HR领域问询、入职、质检、人事系统等平台的AI应用能力，产品调研、B端设计、数据权限，产出高保真与prd",
+      subline: "AI问询/坐席/质检｜大模型平台接入｜数据权限｜质检标签&阈值",
+      techStack: "意图/召回/生成链路｜质检标签&阈值｜分级流转｜后台权限风控｜接口文档",
+      highlights: [
+        "推动HR智能问询助手“小T”迭代，结合 mcp 方案拓展问询场景，提升员工自助效率",
+        "搭建AI坐席质检链路：解决质检重复劳动与人工成本高问题，沉淀PRD/原型并推进上线",
+        "输出入职相关交互设计与PRD，协同研发与运营推进落地",
+        "参与IT系统升级与流程梳理，形成数据链路/接口规范，交付多份报表需求对接",
+        "探索AI辅助产品工作流与Agent能力落地，形成可复用方法论",
+      ],
+      description: "",
       logo: "/company-placeholder.png",
     },
     {
       company: "武汉微派",
       role: "AI产品经理",
       period: "2024.4-2024.6",
-      description: "推动社交陪伴类产品上线，通过模型微调做真人语音房陪聊，涉及情感陪伴、社交对话等方面",
+      subline: "ToC社交陪伴｜真人语音房｜Prompt策略｜RAG/Query｜异常兜底",
+      techStack: "Prompt框架｜A/B实验｜Badcase闭环｜RAG/Query｜异常兜底｜对话策略与节奏设计",
+      highlights: [
+        "优化模型链路与体验：梳理引导步骤与复杂策略，建立评估标准并推进迭代",
+        "主导Prompt策略调优与测试：设计提示词框架，多轮测试与AB验证，评估最优模型效果",
+        "效果建设与增强：搭建RAG/Query方案，结合场景化精调，提升对话质量与留存表现",
+        "基于线上反馈与Badcase沉淀持续迭代，完善异常兜底与对话策略",
+      ],
+      description: "",
       logo: "/company-placeholder.png",
     }
   ],
@@ -109,8 +126,8 @@ export const profileData = {
   achievements: [
     {
       title: "华中师范大学优秀毕业生",
-      year: "",
-      description: "",
+      year: "2026",
+      description: "以优秀成绩在学校结业。",
       icon: "🎓",
     },
     {
