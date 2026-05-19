@@ -44,4 +44,25 @@
       radial-gradient(1px 1px at 80% 60%, rgba(255,255,255,0.12) 50%, transparent 55%),
       linear-gradient(180deg, #0b1220 0%, #0a1020 40%, #090f1d 100%);
   }
+
+  /* 职业历程卡片：Web 端 hover/focus 时滑出详情 */
+  .career-swipe-card .career-card-detail {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .career-enter-right .career-card-detail {
+    transform: translateX(100%);
+  }
+  .career-enter-left .career-card-detail {
+    transform: translateX(-100%);
+  }
+  .career-swipe-card:is(:hover, :focus, :focus-within) .career-card-summary {
+    opacity: 0;
+    transform: translateX(-8px);
+  }
+  .career-enter-right:is(:hover, :focus, :focus-within) .career-card-detail,
+  .career-enter-left:is(:hover, :focus, :focus-within) .career-card-detail {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
