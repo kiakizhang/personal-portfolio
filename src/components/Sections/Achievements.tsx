@@ -26,12 +26,16 @@ export default function Achievements() {
               <h3 className="text-lg font-semibold text-white mb-1">
                 {achievement.title}
               </h3>
-              <p className="text-sm text-blue-400 font-medium mb-2">
-                {achievement.year}
-              </p>
-              <p className="text-gray-400 text-sm">
-                {achievement.description}
-              </p>
+              {achievement.year ? (
+                <p className="text-sm text-blue-400 font-medium mb-2">
+                  {achievement.year}
+                </p>
+              ) : null}
+              {achievement.description ? (
+                <p className="text-gray-400 text-sm">
+                  {achievement.description}
+                </p>
+              ) : null}
             </div>
           ))}
         </div>

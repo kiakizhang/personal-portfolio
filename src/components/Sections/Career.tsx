@@ -1,8 +1,9 @@
 import { profileData } from '../../data/profile';
+import type { CareerItem } from '../../data/profile';
 import Container from '../Layout/Container';
 
 export default function Career() {
-  const { career } = profileData;
+  const { career } = profileData as { career: CareerItem[] };
 
   return (
     <section id="career" className="py-20 bg-gray-900">
@@ -38,7 +39,32 @@ export default function Career() {
                         <p className="text-sm text-gray-400">{item.role}</p>
                       </div>
                     </div>
-                    <p className="text-gray-300 text-sm">{item.description}</p>
+                    {item.subline ? (
+                      <p className="text-gray-300 text-xs leading-relaxed mb-3">
+                        {item.subline}
+                      </p>
+                    ) : null}
+
+                    {item.techStack ? (
+                      <p className="text-gray-400 text-xs leading-relaxed mb-3">
+                        <span className="text-gray-300">技术关键：</span>
+                        {item.techStack}
+                      </p>
+                    ) : null}
+
+                    {item.highlights?.length ? (
+                      <ul className="text-gray-300 text-sm space-y-2 list-disc pl-5 mb-3">
+                        {item.highlights.map((h, i) => (
+                          <li key={i} className="leading-relaxed">
+                            {h}
+                          </li>
+                        ))}
+                      </ul>
+                    ) : null}
+
+                    {item.description ? (
+                      <p className="text-gray-300 text-sm leading-relaxed">{item.description}</p>
+                    ) : null}
                     <p className="text-xs text-gray-500 mt-2">{item.period}</p>
                   </div>
                 </div>

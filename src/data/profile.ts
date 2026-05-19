@@ -1,5 +1,29 @@
 // 个人信息数据 - 请替换为您的真实信息
 
+export type CareerItem = {
+  company: string;
+  role: string;
+  period: string;
+  description?: string;
+  logo?: string;
+  // 结构化信息（可选）
+  subline?: string;
+  techStack?: string;
+  highlights?: string[];
+};
+
+export type SocialAction =
+  | { type: "copy"; value: string; toast?: string }
+  | { type: "link"; url: string };
+
+export type SocialMediaItem = {
+  platform: string;
+  icon: string;
+  qrCode: string;
+  description: string;
+  action?: SocialAction;
+};
+
 export const profileData = {
   // 基础信息
   name: "张琪（kiakizhang）",
@@ -48,10 +72,21 @@ export const profileData = {
   // 职业历程
   career: [
     {
-      company: "梦马智能（Dokichat）",
-      role: "AI产品策划",
+      company: "梦马智能｜海外百万级AI社交产品",
+      role: "AI策略产品",
       period: "2026.3-至今",
-      description: "海外市场AI情感陪伴产品。负责多模型（Claude、gemini等）API对接、提示词优化与测试；搭建内部舆情监控系统；优化产品内部搜推策略。",
+      // 结构化信息（用于更清晰呈现）
+      subline:
+        "洞察与解构用户需求｜抽象产品方案｜用户需求闭环｜A/B思维｜AI优化提效｜模型Prompt与能力评估",
+      techStack: "Prompt工程｜舆情抓取与字段建模｜内容治理SOP",
+      highlights: [
+        "0-1搭建社交&舆情监控平台：关键词/规则配置、数据抓取与看板，沉淀监控SOP并上线",
+        "内容治理闭环：优化分享审核流程；规划“角色评论/举报/申诉/通知”等机制并推动落地",
+        "Prompt专项：提示词调优与效果评估，多轮测试归因；推进提示词缓存、token压缩，基于线上数据持续迭代稳定性",
+        "海外本地化与增长：跟进东南亚支付本地化；制定测试/ASO策略；建立多地区用户反馈与bug闭环",
+      ],
+      // 结构化展示时不再额外输出长段落（保留字段以兼容旧逻辑）
+      description: "",
       logo: "/company-placeholder.png",
     },
     {
@@ -72,6 +107,12 @@ export const profileData = {
   
   // 荣誉成就
   achievements: [
+    {
+      title: "华中师范大学优秀毕业生",
+      year: "",
+      description: "",
+      icon: "🎓",
+    },
     {
       title: "三创跨境电商国赛一等奖",
       year: "2025",
@@ -168,30 +209,52 @@ socialMedia: [
     icon: "wechat",
     qrCode: "/personal-portfolio/vx.jpg",
     description: "欢迎微信交流",
+    action: {
+      type: "copy",
+      value: "qy1934253206",
+      toast: "已复制微信号",
+    },
   },
   {
     platform: "公众号",
     icon: "wechat-official",
     qrCode: "/personal-portfolio/gzh.jpg",
-    description: "记录日常活动及思考",
+    description: "温尘桂音",
+    action: {
+      type: "copy",
+      value: "温尘桂音",
+      toast: "已复制公众号",
+    },
   },
   {
     platform: "播客",
     icon: "podcast",
     qrCode: "/personal-portfolio/boke.jpg",
     description: "收听我的播客节目",
+    action: {
+      type: "link",
+      url: "https://www.xiaoyuzhoufm.com/episode/6941450c4c65abaff34afc1c",
+    },
   },
   {
     platform: "B站",
     icon: "bilibili",
     qrCode: "/personal-portfolio/bilibili.jpg",
     description: "欢迎 B 站账号",
+    action: {
+      type: "link",
+      url: "https://b23.tv/so6CPb1",
+    },
   },
   {
     platform: "CSDN",
     icon: "csdn",
     qrCode: "/personal-portfolio/CSDN.jpg",
     description: "访问 CSDN 博客",
+    action: {
+      type: "link",
+      url: "https://blog.csdn.net/liecheyuan_?spm=1000.2115.3001.5343",
+    },
   },
 ],
 };
