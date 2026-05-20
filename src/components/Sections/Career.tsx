@@ -124,7 +124,7 @@ export default function Career() {
                       tabIndex={0}
                     >
                       {/* Summary */}
-                      <div className="career-card-summary transition-all duration-300 ease-out">
+                      <div className="career-card-summary">
                         <div className="flex items-center gap-4 mb-3">
                           <div className="w-12 h-12 rounded-xl bg-gray-700 flex items-center justify-center text-2xl">
                             🏢
@@ -144,7 +144,8 @@ export default function Career() {
                       </div>
 
                       {/* Detail */}
-                      <div className="career-card-detail absolute inset-0 p-6 transition-all duration-300 ease-out">
+                      <div className="career-card-detail">
+                        <div className="pt-1">
                         {item.techStack ? (
                           <p className="text-gray-400 text-xs leading-relaxed mb-3">
                             <span className="text-gray-300">技术关键：</span>
@@ -161,6 +162,7 @@ export default function Career() {
                             ))}
                           </ul>
                         ) : null}
+                        </div>
                       </div>
                     </div>
                   )}
